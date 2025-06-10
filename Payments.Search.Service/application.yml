@@ -1,0 +1,12 @@
+ConnectionStrings:
+  PaymentsConnection: Host=postgres;Port=5432;Database=Microservices.Demo.Payments;Username=postgres;Password=Password1234
+BackgroundProcess:
+  HangfireConnectionStringName: Host=postgres;Port=5432;Database=Microservices.Demo.Payments.Jobs;Username=postgres;Password=Password1234
+  InPaymentFileFolder: testcases
+Kafka:
+  BootstrapServers: kafka:9092
+  Producers:
+    Events:
+      GroupId: payment.events.consumer.group
+      Topics:
+      - Policy: policy.events
