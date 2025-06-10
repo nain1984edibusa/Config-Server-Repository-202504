@@ -1,0 +1,10 @@
+ElasticSearch:
+  Hosts:
+    - http://elasticsearch:9200
+Kafka:
+  BootstrapServers: kafka:9092
+  Producers:
+    Events:
+      GroupId: policy.search.events.consumer.group
+      Topics:
+      - Policy: policy.events
