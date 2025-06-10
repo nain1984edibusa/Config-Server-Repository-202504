@@ -8,4 +8,3 @@ Kafka:
       GroupId: policy.search.events.consumer.group
       Topics:
       - Policy: policy.events
-      
