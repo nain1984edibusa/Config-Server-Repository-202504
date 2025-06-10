@@ -1,0 +1,11 @@
+URLServices:
+  Pricing: http://pricing.service:8080/api/pricing
+ConnectionStrings:
+  PoliciesConnection: Server=mysql;Port=3306;Database=Microservices.Demo.Policies;User=root;Password=Password1234
+Kafka:
+  BootstrapServers: kafka:9092
+  Producers:
+    Events:
+      GroupId: policy.events.producer.group
+      Topics:
+      - Policy: policy.events
