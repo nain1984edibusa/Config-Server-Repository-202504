@@ -9,3 +9,7 @@ Kafka:
       GroupId: policy.events.producer.group
       Topics:
       - Policy: policy.events
+Persistence:
+  Outbox:
+    MessagingConnection: Server=sqlserver,1433;Database=Microservices.Demo.MessagesBox;User Id=sa;Password=Password1234;TrustServerCertificate=True;Encrypt=False;
+    TableName: OutboxMessagesPolicies
