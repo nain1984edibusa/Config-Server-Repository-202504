@@ -1,5 +1,5 @@
 OtelCollector:
-  Endpoint: http://jaeger:4319
+  Endpoint: http://jaeger:4317
   ServiceName: Products.Service.3
 ConnectionStrings:
   ProductsConnection: Server=sqlserver,1433;Database=Microservices.Demo.Products;User Id=sa;Password=Password1234;TrustServerCertificate=True;Encrypt=False;
