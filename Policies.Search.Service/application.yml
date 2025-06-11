@@ -4,6 +4,8 @@ OtelCollector:
 ElasticSearch:
   Hosts:
     - http://elasticsearch:9200
+  UserName: elastic
+  Password: elastic
 Kafka:
   BootstrapServers: kafka:9092
   Producers:
