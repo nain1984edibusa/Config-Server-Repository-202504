@@ -1,2 +1,5 @@
+OtelCollector:
+  Endpoint: http://jaeger:4317
+  ServiceName: Pricing.Service
 ConnectionStrings:
   PricingConnection: Host=postgres;Port=5432;Database=Microservices.Demo.Pricing;Username=postgres;Password=Password1234

@@ -1,3 +1,6 @@
+OtelCollector:
+  Endpoint: http://jaeger:4317
+  ServiceName: Gateway
 Routes:
   - UpstreamPathTemplate: /gateway/products
     UpstreamHttpMethod:

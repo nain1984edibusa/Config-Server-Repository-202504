@@ -1,3 +1,6 @@
+OtelCollector:
+  Endpoint: http://jaeger:4317
+  ServiceName: Payments.Service
 ConnectionStrings:
   PaymentsConnection: Host=postgres;Port=5432;Database=Microservices.Demo.Payments;Username=postgres;Password=Password1234
 BackgroundProcess:
