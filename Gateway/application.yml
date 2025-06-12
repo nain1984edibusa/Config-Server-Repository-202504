@@ -1,6 +1,6 @@
 ElasticApm:
   ServiceName: Gateway
-  ServerUrls: http://apm-server:8200
+  ServerUrl: http://apm-server:8200
   Environment: production
   CaptureBody: all
   TransactionSampleRate: 1.0
