@@ -6,6 +6,10 @@ ElasticApm:
   Environment: production
   CaptureBody: all
   TransactionSampleRate: 1.0
+Logstash:
+  Uri: http://logstash:28080
+  ServiceName: Policies.Search.Service
+  Environment: production
 OtelCollector:
   Endpoint: http://jaeger:4317
   ServiceName: Policies.Search.Service
