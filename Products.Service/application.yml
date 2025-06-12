@@ -1,3 +1,5 @@
+Logging:
+  Elastic.Apm: "Warning"
 ElasticApm:
   ServiceName: Products.Service
   ServerUrl: http://apm-server:8200
