@@ -6,6 +6,11 @@ ElasticApm:
   Environment: production
   CaptureBody: all
   TransactionSampleRate: 1.0
+Keycloak:
+  Server: http://Keycloak:8080
+  Realm: microservices-demo
+  Issuer: http://localhost:8992/realms/microservices-demo
+  Authority: http://Keycloak:8080/realms/microservices-demo
 Logstash:
   Uri: http://logstash:28080
   ServiceName: Gateway
