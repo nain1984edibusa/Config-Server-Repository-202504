@@ -76,7 +76,8 @@ Routes:
     AuthenticationOptions:
       AuthenticationProviderKey: ApiSecurityAuthenticationScheme
     AddHeadersToRequest:
-      AgentLogin: Claims[http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier] > value[0] > |
+      # AgentLogin: Claims[http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier] > value[0] > |
+      AgentLogin: "Claims[preferred_username] > value[1] > |"
   - UpstreamPathTemplate: '/gateway/offers/{everything}'
     UpstreamHttpMethod:
       - POST
