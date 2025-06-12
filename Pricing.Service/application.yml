@@ -1,3 +1,9 @@
+ElasticApm:
+  ServiceName: Pricing.Service
+  ServerUrls: http://apm-server:8200
+  Environment: production
+  CaptureBody: all
+  TransactionSampleRate: 1.0
 OtelCollector:
   Endpoint: http://jaeger:4317
   ServiceName: Pricing.Service
