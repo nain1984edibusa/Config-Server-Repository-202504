@@ -1,0 +1,17 @@
+Logging:
+  Elastic.Apm: "Warning"
+ElasticApm:
+  ServiceName: Reports.Service
+  ServerUrl: http://apm-server:8200
+  Environment: production
+  CaptureBody: all
+  TransactionSampleRate: 1.0
+Logstash:
+  Uri: http://logstash:28080
+  ServiceName: Reports.Service
+  Environment: production
+OtelCollector:
+  Endpoint: http://jaeger:4317
+  ServiceName: Reports.Service
+ConnectionStrings:
+  ProductsConnection: Server=sqlserver,1433;Database=Microservices.Demo.Products;User Id=sa;Password=Password1234;TrustServerCertificate=True;Encrypt=False;
