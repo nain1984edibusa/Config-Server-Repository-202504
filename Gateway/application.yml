@@ -45,6 +45,32 @@ Routes:
       Type: RoundRobin
     AuthenticationOptions:
       AuthenticationProviderKey: ApiSecurityAuthenticationScheme
+  UpstreamPathTemplate: /gateway/report
+    UpstreamHttpMethod:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+    DownstreamPathTemplate: /api/report
+    DownstreamScheme: http
+    ServiceName: reports.service
+    LoadBalancerOptions:
+      Type: RoundRobin
+    AuthenticationOptions:
+      AuthenticationProviderKey: ApiSecurityAuthenticationScheme
+  - UpstreamPathTemplate: '/gateway/report/{everything}'
+    UpstreamHttpMethod:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+    DownstreamPathTemplate: '/api/report/{everything}'
+    DownstreamScheme: http
+    ServiceName: reports.service
+    LoadBalancerOptions:
+      Type: RoundRobin
+    AuthenticationOptions:
+      AuthenticationProviderKey: ApiSecurityAuthenticationScheme
   - UpstreamPathTemplate: /gateway/pricing
     UpstreamHttpMethod:
       - POST
