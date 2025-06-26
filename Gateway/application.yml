@@ -56,8 +56,6 @@ Routes:
     ServiceName: reports.service
     LoadBalancerOptions:
       Type: RoundRobin
-    AuthenticationOptions:
-      AuthenticationProviderKey: ApiSecurityAuthenticationScheme
   - UpstreamPathTemplate: '/gateway/reports/{everything}'
     UpstreamHttpMethod:
       - GET
@@ -69,8 +67,6 @@ Routes:
     ServiceName: reports.service
     LoadBalancerOptions:
       Type: RoundRobin
-    AuthenticationOptions:
-      AuthenticationProviderKey: ApiSecurityAuthenticationScheme
   - UpstreamPathTemplate: /gateway/pricing
     UpstreamHttpMethod:
       - POST
